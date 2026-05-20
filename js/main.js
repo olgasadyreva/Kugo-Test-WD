@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   // =========================================================================
-  // PHONE MASK  (+7 (___) __-__-__)
+  // PHONE MASK  (+7 (___) ___ - __ - __) — как в макете Figma
   // =========================================================================
 
   function applyPhoneMask(input) {
@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let out = '+7';
     if (digits.length > 0) out += ' (' + digits.slice(0, 3);
     if (digits.length >= 3) out += ')';
-    if (digits.length > 3) out += ' '  + digits.slice(3, 6);
-    if (digits.length > 6) out += '-'  + digits.slice(6, 8);
-    if (digits.length > 8) out += '-'  + digits.slice(8, 10);
+    if (digits.length > 3) out += ' ' + digits.slice(3, 6);
+    if (digits.length > 6) out += ' - ' + digits.slice(6, 8);
+    if (digits.length > 8) out += ' - ' + digits.slice(8, 10);
 
     input.value = out;
   }
@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelectorAll('.field__input--phone').forEach(function (input) {
     input.addEventListener('focus', function () {
-      if (!this.value) this.value = '+7 ';
+      if (!this.value) this.value = '+7 (';
     });
 
     input.addEventListener('blur', function () {
-      if (this.value === '+7 ' || this.value === '+7') this.value = '';
+      if (this.value === '+7 (' || this.value === '+7 ' || this.value === '+7') this.value = '';
     });
 
     input.addEventListener('input', function () {

@@ -8,12 +8,31 @@
     <title>Тест-драйв электросамокатов — Kugo</title>
   </head>
   <body>
+		{# <nav id="header-nave"
+		class="header__topline-nav header__mobile-nav"
+		aria-label="Вспомогательная навигация"
+	>
+		<a href="#" class="header__topline-link">Сервис</a>
+		<a href="#" class="header__topline-link">Сотрудничество</a>
+		<a href="#" class="header__topline-link">Заказать звонок</a>
+	</nav> #}
     <!-- HEADER -->
     <header class="header">
+			<hr class="header__divider" />
       <div class="container">
         <div class="header__topline">
           <div class="header__topline-inner">
+						<button
+              class="header__burger"
+              type="button"
+              aria-controls="header-mobile-nav"
+              aria-expanded="false"
+              aria-label="Открыть меню"
+            >
+              <span></span><span></span><span></span>
+            </button>
             <nav
+							id="header-nave"
               class="header__topline-nav"
               aria-label="Вспомогательная навигация"
             >
@@ -54,15 +73,7 @@
               </span>
               Каталог
             </button>
-            <button
-              class="header__burger"
-              type="button"
-              aria-controls="header-mobile-nav"
-              aria-expanded="false"
-              aria-label="Открыть меню"
-            >
-              <span></span><span></span><span></span>
-            </button>
+
             <form class="header__search" role="search">
               <input
                 class="header__search-input"
@@ -99,7 +110,7 @@
                   <use xlink:href="img/sprite.svg#icon-heart" />
                 </svg>
               </button>
-              <button
+							<button
                 class="header__action-btn header__action-btn--cart"
                 type="button"
                 aria-label="Корзина"
@@ -110,8 +121,8 @@
                 <span class="header__cart-label" aria-hidden="true"
                   >Корзина</span
                 >
-              </button>
-            </div>
+							</button>
+						</div>
           </div>
         </div>
       </div>
@@ -133,7 +144,7 @@
             </div>
 
             <h1 class="hero__title">
-              Запишитесь на бесплатный тест-драйв электросамокатов
+              Запишитесь на&nbsp;бесплатный тест-драйв электросамокатов
             </h1>
             <p class="hero__subtitle">в Москве без ограничения по времени</p>
             <div class="hero__features">
@@ -174,8 +185,8 @@
               Определите максимально подходящую вам модель<br />
               не теоретически, а на практике
             </h2>
+						<h3 class="benefits__subtitle">Тест-драйв поможет:</h3>
             <ul class="checklist benefits__checklist">
-              Тест-драйв поможет:
               <li class="checklist__item">
                 <span>Понять</span> подходит ли вам конкретная модель
               </li>
@@ -226,8 +237,8 @@
               Научим правильной<br />
               и безопасной езде в городе вас или вашего ребенка
             </h2>
+						<h3 class="benefits__subtitle">На обучении специалист расскажет:</h3>
             <ul class="checklist benefits__checklist">
-              На обучении специалист расскажет:
               <li class="checklist__item">
                 Как подготовить самокат к поездке;
               </li>
@@ -255,7 +266,7 @@
               <span class="card__badge card__badge--hit">ХИТ</span>
               <div class="card__icon">
                 <svg class="icon" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-balance" />
+                  <use xlink:href="img/sprite.svg#icon-balance-2" />
                 </svg>
               </div>
 
@@ -272,7 +283,7 @@
                 </picture>
               </div>
               <div class="card__content">
-                <h3 class="card__name">Kugo Kirin M4</h3>
+                <h3 class="card__name">Kugoo Kirin M4</h3>
                 <ul class="card__specs">
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
@@ -317,7 +328,7 @@
                   class="btn btn--primary card__cta"
                   type="button"
                   data-open-modal="signup"
-                  data-model="Kugo Kirin M4"
+                  data-model="Kugoo Kirin M4"
                 >
                   Записаться на тест-драйв
                 </button>
@@ -328,7 +339,7 @@
               <span class="card__badge card__badge--new">Новинка</span>
               <div class="card__icon">
                 <svg class="icon" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-balance" />
+                  <use xlink:href="img/sprite.svg#icon-balance-2" />
                 </svg>
               </div>
               <div class="card__image">
@@ -344,7 +355,7 @@
                 </picture>
               </div>
               <div class="card__content">
-                <h3 class="card__name">Kugo Kirin M4</h3>
+                <h3 class="card__name">Kugoo Kirin M4</h3>
                 <ul class="card__specs">
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
@@ -389,7 +400,7 @@
                   class="btn btn--primary card__cta"
                   type="button"
                   data-open-modal="signup"
-                  data-model="Kugo Kirin M4"
+                  data-model="Kugoo Kirin M4"
                 >
                   Записаться на тест-драйв
                 </button>
@@ -400,7 +411,7 @@
               <span class="card__badge card__badge--hit">ХИТ</span>
               <div class="card__icon">
                 <svg class="icon" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-balance" />
+                  <use xlink:href="img/sprite.svg#icon-balance-2" />
                 </svg>
               </div>
               <div class="card__image">
@@ -416,7 +427,7 @@
                 </picture>
               </div>
               <div class="card__content">
-                <h3 class="card__name">Kugo Kirin M4</h3>
+                <h3 class="card__name">Kugoo Kirin M4</h3>
                 <ul class="card__specs">
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
@@ -462,7 +473,7 @@
                   class="btn btn--primary card__cta"
                   type="button"
                   data-open-modal="signup"
-                  data-model="Kugo Kirin M4"
+                  data-model="Kugoo Kirin M4"
                 >
                   Записаться на тест-драйв
                 </button>
@@ -473,7 +484,7 @@
               <span class="card__badge card__badge--new">Новинка</span>
               <div class="card__icon">
                 <svg class="icon" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#icon-balance" />
+                  <use xlink:href="img/sprite.svg#icon-balance-2" />
                 </svg>
               </div>
               <div class="card__image">
@@ -489,7 +500,7 @@
                 </picture>
               </div>
               <div class="card__content">
-                <h3 class="card__name">Kugo Kirin M4</h3>
+                <h3 class="card__name">Kugoo Kirin M4</h3>
                 <ul class="card__specs">
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
@@ -534,7 +545,7 @@
                   class="btn btn--primary card__cta"
                   type="button"
                   data-open-modal="signup"
-                  data-model="Kugo Kirin M4"
+                  data-model="Kugoo Kirin M4"
                 >
                   Записаться на тест-драйв
                 </button>
@@ -817,7 +828,7 @@
           </div>
 
           <div class="footer__chat">
-            <span class="footer__chat-label">Online чат:</span>
+            <span class="footer__chat-label">Online&nbsp;чат:</span>
             <a href="#" class="footer__chat-link" aria-label="Viber">
               <svg class="icon" aria-hidden="true">
                 <use href="img/sprite.svg#icon-viber" />

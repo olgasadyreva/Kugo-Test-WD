@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalHint    = document.getElementById('modal-model-hint');
 
   // — Open ——————————————————————————————————————————————————————————————————
-
+// modal.showModal();
   document.addEventListener('click', function (e) {
     const trigger = e.target.closest('[data-open-modal="signup"]');
     if (!trigger) return;
@@ -212,12 +212,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // =========================================================================
 
   const burger  = document.querySelector('.header__burger');
-  const headerNav = document.getElementById('header-nav');
+  const headerNav = document.getElementById('header-mobile-nav');
 
   if (burger && headerNav) {
     burger.addEventListener('click', function () {
       const isOpen = headerNav.classList.toggle('is-open');
       burger.setAttribute('aria-expanded', String(isOpen));
+
     });
 
     // Close nav when a link inside it is clicked

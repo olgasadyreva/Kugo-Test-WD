@@ -240,6 +240,11 @@ textarea:focus-visible {
   color: #fff;
 }
 
+main {
+		position: relative;
+    z-index: -1;
+	}
+
 /* ==========================================================================
    FORM FIELDS
    ========================================================================== */
@@ -501,7 +506,7 @@ input.field__input--email:-webkit-autofill:focus {
 .header__topline-nav {
   display: flex;
   align-items: center;
-  gap: 30px;
+  /* gap: 30px; */
 }
 
 .header__mobile-nav {
@@ -513,6 +518,9 @@ input.field__input--email:-webkit-autofill:focus {
   color: var(--clr-text-muted);
   text-decoration: none;
   transition: color var(--transition);
+}
+.header__topline-link:not(:last-child) {
+	margin-right: 30px;
 }
 
 .header__topline-socials {
@@ -2596,9 +2604,9 @@ dialog[open]::backdrop {
   }
 
   .header__actions {
-    margin-left: 0;
     margin-top: 15px;
     margin-bottom: 30px;
+		width: 100%;
   }
 
   .header__burger {
@@ -2614,8 +2622,12 @@ dialog[open]::backdrop {
     background-color: #fff;
   }
 
+	.header__catalog {
+		margin-left: 20px;
+	}
+
   .hero {
-    padding-top: 160px;
+    /* padding-top: 160px; */
   }
   .hero__inner {
     background-position: 78%;
@@ -2678,6 +2690,7 @@ dialog[open]::backdrop {
     font-size: 28px;
   }
   .header__search {
+		max-width: 100%;
     margin-right: 0;
   }
   .hero__inner {
@@ -2685,6 +2698,10 @@ dialog[open]::backdrop {
     background-position: left;
     min-height: 400px;
     height: fit-content;
+  }
+
+	.header__catalog {
+    margin-left: auto;
   }
 
   .checklist__item {
@@ -2755,7 +2772,7 @@ dialog[open]::backdrop {
   }
 
   .header__actions {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
   }
   .header__search {
     min-width: 100%;

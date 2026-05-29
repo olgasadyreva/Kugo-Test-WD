@@ -220,19 +220,25 @@ document.addEventListener("DOMContentLoaded", function () {
   // =========================================================================
   // MOBILE MENU
   // =========================================================================
-
+	const main = document.querySelector("main");
   const burger = document.querySelector(".header__burger");
   const headerNav = document.getElementById("header-mobile-nav");
-  const navbar = document.querySelector(".navbar");
+  const navbar = document.querySelector(".header");
 
   const mMenuToggle = document.querySelector(".mobile-menu-toggle");
   const menu = document.querySelector(".mobile__menu");
+  const header = document.querySelector(".header");
   const menuClose = document.querySelector(".menu__close");
   let isValid = false;
+
+	const changeMainPaddingTop = (paddingTop) => {
+		main.style.paddingTop = paddingTop;
+	};
 
   const openMenu = (event) => {
     menu.classList.add("is-open");
     mMenuToggle.classList.add("close-menu");
+		changeMainPaddingTop("72px");
     mMenuToggle.setAttribute("aria-expanded", "true");
     document.body.style.overflow = "hidden";
     document.body.classList.add("menu-open");
@@ -244,6 +250,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mMenuToggle.setAttribute("aria-expanded", "false");
     document.body.style.overflow = "";
     document.body.classList.remove("menu-open");
+		changeMainPaddingTop("0px");
   };
 
   mMenuToggle.addEventListener("click", (event) => {
@@ -283,7 +290,16 @@ document.addEventListener("DOMContentLoaded", function () {
         burger.setAttribute("aria-expanded", "false");
       }
     });
+
+
   }
+
+	document.addEventListener("keyup", function (event) {
+			if (event.key === "Escape" && menu.classList.contains("is-open")) {
+				// menu.classList.remove("is-open");
+				closeMenu();
+			}
+});
 
   // =========================================================================
   // HELPERS
@@ -346,8 +362,11 @@ modalDialog.addEventListener('click', (e) => {
   });
 
   document.addEventListener("keyup", function (event) {
-    if (event.key === "Escape" && currentModal.classList.contains("is-open")) {
-      currentModal.classList.remove("is-open");
+		if(currentModal) {
+			if (event.key === "Escape" && currentModal.classList.contains("is-open")) {
+
+					currentModal.classList.remove("is-open");
+				}
     }
   });
 

@@ -1,91 +1,120 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Тест-драйв электросамокатов — Kugo</title>
 
-		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+   >
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+   >
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+   >
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+   >
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+   >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+   >
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-		<div class="mobile__menu">
-			<nav
-				class="mobile__nav"
-				aria-label="Мобильная навигация"
-			>
-				<a href="#" class="mobile__link">Сервис</a>
-				<a href="#" class="mobile__link">Сотрудничество</a>
-				<a href="#" class="mobile__link">Заказать звонок</a>
-			</nav>
-		</div>
+    <div class="mobile__menu">
+      <nav class="mobile__nav" aria-label="Мобильная навигация">
+        <a href="#" class="mobile__link">Сервис</a>
+
+        <a href="#" class="mobile__link">Сотрудничество</a>
+
+        <a href="#" class="mobile__link">Заказать звонок</a>
+      </nav>
+    </div>
 
     <!-- HEADER -->
     <header class="header">
-			<hr class="header__divider" />
+      <hr class="header__divider">
+
       <div class="container">
         <div class="header__topline">
           <div class="header__topline-inner">
-						 <button
+            <button
               class="header__burger mobile-menu-toggle"
               type="button"
               aria-controls="header-mobile-nav"
               aria-expanded="false"
               aria-label="Открыть меню"
-            >
+           >
               <span></span><span></span><span></span>
             </button>
 
-            <nav
-              class="header__topline-nav"
-              aria-label="Главная навигация"
-            >
-							<a href="#" class="mobile-menu-toggle">
-								<div class="mobile-menu-line"></div>
-								<div class="mobile-menu-line"></div>
-								<div class="mobile-menu-line"></div>
-							</a>
+            <nav class="header__topline-nav" aria-label="Главная навигация">
+              <a href="#" class="mobile-menu-toggle">
+                <div class="mobile-menu-line"></div>
+                <div class="mobile-menu-line"></div>
+                <div class="mobile-menu-line"></div>
+              </a>
+
               <a href="#" class="header__topline-link">Сервис</a>
+
               <a href="#" class="header__topline-link">Сотрудничество</a>
+
               <a href="#" class="header__topline-link">Заказать звонок</a>
             </nav>
-            <div class="header__topline-socials" aria-label="Социальные сети">
+
+            <div class="header__topline-socials">
               <a href="#" class="header__social-link" aria-label="Viber">
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-viber" />
                 </svg>
               </a>
+
               <a href="#" class="header__social-link" aria-label="WhatsApp">
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-whatsapp" />
                 </svg>
               </a>
+
               <a href="#" class="header__social-link" aria-label="Telegram">
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-telegram" />
                 </svg>
               </a>
             </div>
+
             <a href="tel:+78005055461" class="header__topline-phone"
-              >+7 (800) 505-54-61</a
-            >
+             >+7 (800) 505-54-61</a
+           >
           </div>
         </div>
         <div class="header__top">
@@ -93,6 +122,7 @@
             <a href="/" class="header__logo" aria-label="Kugo — главная">
               KUGOO
             </a>
+
             <button class="header__catalog btn btn--primary" type="button">
               <span class="header__catalog-lines" aria-hidden="true">
                 <span></span><span></span><span></span>
@@ -106,49 +136,53 @@
                 type="search"
                 placeholder="Искать самокат KUGO"
                 aria-label="Искать самокат KUGO"
-              />
+             >
+
               <button
                 class="header__search-btn"
                 type="submit"
                 aria-label="Найти"
-              >
+             >
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-search" />
                 </svg>
               </button>
             </form>
+
             <div class="header__actions">
               <button
                 class="header__action-btn"
                 type="button"
                 aria-label="Сравнение"
-              >
+             >
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-balance-2" />
                 </svg>
               </button>
+
               <button
                 class="header__action-btn"
                 type="button"
                 aria-label="Избранное"
-              >
+             >
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-heart" />
                 </svg>
               </button>
-							<button
+
+              <button
                 class="header__action-btn header__action-btn--cart"
                 type="button"
                 aria-label="Корзина"
-              >
+             >
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-cart" />
                 </svg>
                 <span class="header__cart-label" aria-hidden="true"
-                  >Корзина</span
-                >
-							</button>
-						</div>
+                 >Корзина</span
+               >
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -172,7 +206,9 @@
             <h1 class="hero__title">
               Запишитесь на&nbsp;бесплатный тест-драйв электросамокатов
             </h1>
+
             <p class="hero__subtitle">в Москве без ограничения по времени</p>
+
             <div class="hero__features">
               <div class="hero__feature">
                 <div class="hero__images">
@@ -182,6 +218,7 @@
                 </div>
                 <span>Поймёте, какая модель вам подходит</span>
               </div>
+
               <div class="hero__feature">
                 <div class="hero__images">
                   <svg class="hero__feature-icon icon" aria-hidden="true">
@@ -196,7 +233,7 @@
               class="btn btn--primary hero__cta"
               type="button"
               data-open-modal="signup"
-            >
+           >
               Записаться
             </button>
           </div>
@@ -208,20 +245,25 @@
         <div class="container benefits__inner">
           <div class="benefits__content">
             <h2 class="benefits__title">
-              Определите максимально подходящую вам модель<br />
+              Определите максимально подходящую вам модель<br>
               не теоретически, а на практике
             </h2>
-						<h3 class="benefits__subtitle">Тест-драйв поможет:</h3>
+
+            <h3 class="benefits__subtitle">Тест-драйв поможет:</h3>
+
             <ul class="checklist benefits__checklist">
               <li class="checklist__item">
                 <span>Понять</span> подходит ли вам конкретная модель
               </li>
+
               <li class="checklist__item">
                 <span>Испытать</span> самокат в «реальной жизни»;
               </li>
+
               <li class="checklist__item">
                 <span>Оценить</span> удобство хранения и эксплуатации;
               </li>
+
               <li class="checklist__item">
                 <span>Узнать</span> реальные характеристики и возможности
                 модели.
@@ -230,14 +272,14 @@
           </div>
           <div class="benefits__image">
             <picture>
-              <source type="image/webp" srcset="img/benefit-1-scooter.webp" />
-              <source type="image/jpeg" srcset="img/benefit-1-scooter.jpg" />
+              <source type="image/webp" srcset="img/benefit-1-scooter.webp">
+              <source type="image/jpeg" srcset="img/benefit-1-scooter.jpg">
               <img
                 src="img/benefit-1-scooter.jpg"
                 alt="Скутер 1"
                 width="515"
                 height="422"
-              />
+             >
             </picture>
           </div>
         </div>
@@ -248,33 +290,42 @@
         <div class="container benefits__inner">
           <div class="benefits__image">
             <picture>
-              <source type="image/webp" srcset="img/benefit-2-rider.webp" />
-              <source type="image/jpeg" srcset="img/benefit-2-rider.jpg" />
+              <source type="image/webp" srcset="img/benefit-2-rider.webp">
+              <source type="image/jpeg" srcset="img/benefit-2-rider.jpg">
               <img
                 src="img/benefit-2-rider.jpg"
                 alt="Скутер 2"
                 width="515"
                 height="463"
-              />
+             >
             </picture>
           </div>
+
           <div class="benefits__content">
             <h2 class="benefits__title">
-              Научим правильной<br />
+              Научим правильной<br>
               и безопасной езде в городе вас или вашего ребенка
             </h2>
-						<h3 class="benefits__subtitle">На обучении специалист расскажет:</h3>
+
+            <h3 class="benefits__subtitle">
+              На обучении специалист расскажет:
+            </h3>
+
             <ul class="checklist benefits__checklist">
               <li class="checklist__item">
                 Как подготовить самокат к поездке;
               </li>
+
               <li class="checklist__item">Как «завести» самокат;</li>
+
               <li class="checklist__item">
                 Как вести себя во время поездки и обезопасить себя и окружающих;
               </li>
+
               <li class="checklist__item">
                 Как складывать и раскладывать электросамокат;
               </li>
+
               <li class="checklist__item">Как ухаживать за своим девайсом.</li>
             </ul>
           </div>
@@ -287,9 +338,11 @@
           <h2 class="models__title">
             Сейчас для тест-драйва и обучения доступны следующие модели
           </h2>
+
           <div class="models__grid">
             <article class="card">
               <span class="card__badge card__badge--hit">ХИТ</span>
+
               <div class="card__icon">
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-balance-2" />
@@ -298,18 +351,20 @@
 
               <div class="card__image">
                 <picture>
-                  <source type="image/webp" srcset="img/product-1.webp" />
-                  <source type="image/png" srcset="img/product-1.png" />
+                  <source type="image/webp" srcset="img/product-1.webp">
+                  <source type="image/png" srcset="img/product-1.png">
                   <img
                     src="img/product-1.png"
                     alt="Скутер-1"
                     width="255"
                     height="231"
-                  />
+                 >
                 </picture>
               </div>
+
               <div class="card__content">
                 <h3 class="card__name">Kugoo Kirin M4</h3>
+
                 <ul class="card__specs">
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
@@ -317,18 +372,21 @@
                     </svg>
                     <span>2000mAh</span>
                   </li>
+
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-power" />
                     </svg>
                     <span>1,2 л.с.</span>
                   </li>
+
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-speed" />
                     </svg>
                     <span>60 км/ч</span>
                   </li>
+
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-timer" />
@@ -336,15 +394,18 @@
                     <span>5 часов</span>
                   </li>
                 </ul>
+
                 <div class="card__footer">
                   <div class="card__prices">
                     <div class="card__price-old">29&nbsp;990 ₽</div>
                     <div class="card__price-current">29&nbsp;990 ₽</div>
                   </div>
+
                   <div class="card__footer-icons">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-cart-2" />
                     </svg>
+
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-heart-2" />
                     </svg>
@@ -355,7 +416,7 @@
                   type="button"
                   data-open-modal="signup"
                   data-model="Kugoo Kirin M4"
-                >
+               >
                   Записаться на тест-драйв
                 </button>
               </div>
@@ -363,25 +424,29 @@
 
             <article class="card">
               <span class="card__badge card__badge--new">Новинка</span>
+
               <div class="card__icon">
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-balance-2" />
                 </svg>
               </div>
+
               <div class="card__image">
                 <picture>
-                  <source type="image/webp" srcset="img/product-1.webp" />
-                  <source type="image/png" srcset="img/product-1.png" />
+                  <source type="image/webp" srcset="img/product-1.webp">
+                  <source type="image/png" srcset="img/product-1.png">
                   <img
                     src="img/product-1.png"
                     alt="Скутер-1"
                     width="255"
                     height="231"
-                  />
+                 >
                 </picture>
               </div>
+
               <div class="card__content">
                 <h3 class="card__name">Kugoo Kirin M4</h3>
+
                 <ul class="card__specs">
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
@@ -389,18 +454,21 @@
                     </svg>
                     <span>2000mAh</span>
                   </li>
+
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-power" />
                     </svg>
                     <span>1,2 л.с.</span>
                   </li>
+
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
-                      <use xlink:href="img/sprite.svg#icon-speed" />
+                      <use xlink:href="img/sprite.svg#icon-speed " />
                     </svg>
                     <span>60 км/ч</span>
                   </li>
+
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-timer" />
@@ -408,6 +476,7 @@
                     <span>5 часов</span>
                   </li>
                 </ul>
+
                 <div class="card__footer">
                   <div class="card__prices">
                     <div class="card__price-old">29&nbsp;990 ₽</div>
@@ -422,12 +491,13 @@
                     </svg>
                   </div>
                 </div>
+
                 <button
                   class="btn btn--primary card__cta"
                   type="button"
                   data-open-modal="signup"
                   data-model="Kugoo Kirin M4"
-                >
+               >
                   Записаться на тест-драйв
                 </button>
               </div>
@@ -435,25 +505,29 @@
 
             <article class="card">
               <span class="card__badge card__badge--hit">ХИТ</span>
+
               <div class="card__icon">
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-balance-2" />
                 </svg>
               </div>
+
               <div class="card__image">
                 <picture>
-                  <source type="image/webp" srcset="img/product-1.webp" />
-                  <source type="image/png" srcset="img/product-1.png" />
+                  <source type="image/webp" srcset="img/product-1.webp">
+                  <source type="image/png" srcset="img/product-1.png">
                   <img
                     src="img/product-1.png"
                     alt="Скутер-1"
                     width="255"
                     height="231"
-                  />
+                 >
                 </picture>
               </div>
+
               <div class="card__content">
                 <h3 class="card__name">Kugoo Kirin M4</h3>
+
                 <ul class="card__specs">
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
@@ -461,18 +535,21 @@
                     </svg>
                     <span>2000mAh</span>
                   </li>
+
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-power" />
                     </svg>
                     <span>1,2 л.с.</span>
                   </li>
+
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-speed" />
                     </svg>
                     <span>60 км/ч</span>
                   </li>
+
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-timer" />
@@ -485,10 +562,12 @@
                     <div class="card__price-old">29&nbsp;990 ₽</div>
                     <div class="card__price-current">29&nbsp;990 ₽</div>
                   </div>
+
                   <div class="card__footer-icons">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-cart-2" />
                     </svg>
+
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-heart-2" />
                     </svg>
@@ -500,7 +579,7 @@
                   type="button"
                   data-open-modal="signup"
                   data-model="Kugoo Kirin M4"
-                >
+               >
                   Записаться на тест-драйв
                 </button>
               </div>
@@ -508,25 +587,31 @@
 
             <article class="card">
               <span class="card__badge card__badge--new">Новинка</span>
+
               <div class="card__icon">
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-balance-2" />
                 </svg>
               </div>
+
               <div class="card__image">
                 <picture>
-                  <source type="image/webp" srcset="img/product-1.webp" />
-                  <source type="image/png" srcset="img/product-1.png" />
+                  <source type="image/webp" srcset="img/product-1.webp">
+                  <source type="image/png" srcset="img/product-1.png">
                   <img
                     src="img/product-1.png"
                     alt="Скутер-1"
                     width="255"
                     height="231"
-                  />
+                 >
                 </picture>
               </div>
+
               <div class="card__content">
-                <h3 class="card__name">Kugoo Kirin M4 Kugoo Kirin M4 Kugoo Kirin M4 Kugoo Kirin M4</h3>
+                <h3 class="card__name">
+                  Kugoo Kirin M4 Kugoo Kirin M4 Kugoo Kirin M4 Kugoo Kirin M4
+                </h3>
+
                 <ul class="card__specs">
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
@@ -534,18 +619,21 @@
                     </svg>
                     <span>2000mAh</span>
                   </li>
+
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-power" />
                     </svg>
                     <span>1,2 л.с.</span>
                   </li>
+
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-speed" />
                     </svg>
                     <span>60 км/ч</span>
                   </li>
+
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-timer" />
@@ -553,26 +641,30 @@
                     <span>5 часов</span>
                   </li>
                 </ul>
+
                 <div class="card__footer">
                   <div class="card__prices">
                     <div class="card__price-old">29&nbsp;990 ₽</div>
                     <div class="card__price-current">29&nbsp;990 ₽</div>
                   </div>
+
                   <div class="card__footer-icons">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-cart-2" />
                     </svg>
+
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-heart-2" />
                     </svg>
                   </div>
                 </div>
+
                 <button
                   class="btn btn--primary card__cta"
                   type="button"
                   data-open-modal="signup"
                   data-model="Kugoo Kirin M4"
-                >
+               >
                   Записаться на тест-драйв
                 </button>
               </div>
@@ -588,16 +680,19 @@
             <h2 class="cta-form__title">
               Нет нужной модели, которую хотите протестировать?
             </h2>
+
             <p class="cta-form__subtitle">
               Оставьте заявку, и менеджер подберет нужный самокат
             </p>
+
             <form class="cta-form__form" id="cta-contact-form">
               <div class="cta-form__fields">
                 <div class="field">
                   <label
                     class="field__label visually-hidden"
                     for="cta-phone"
-                  ></label>
+                 ></label>
+
                   <input
                     class="field__input field__input--phone"
                     type="tel"
@@ -606,8 +701,9 @@
                     placeholder="+7 (___) __ - __ - __"
                     autocomplete="tel"
                     required
-                  />
+                 >
                 </div>
+
                 <button class="btn btn--primary cta-form__submit" type="submit">
                   Оставить заявку на тест-драйв
                 </button>
@@ -618,27 +714,28 @@
                     type="checkbox"
                     name="consent"
                     required
-                  />
+                 >
                   <span class="field__text"
-                    >Нажимая на кнопку, вы соглашаетесь на обработку
+                   >Нажимая на кнопку, вы соглашаетесь на обработку
                     персональных данных и&nbsp;<a href="#"
-                      >политикой конфиденциальности</a
-                    ></span
-                  >
+                     >политикой конфиденциальности</a
+                   ></span
+                 >
                 </label>
               </div>
             </form>
           </div>
+
           <div class="cta-form__image">
             <picture>
-              <source type="image/webp" srcset="img/cta-girl.webp" />
-              <source type="image/png" srcset="img/cta-girl.png" />
+              <source type="image/webp" srcset="img/cta-girl.webp">
+              <source type="image/png" srcset="img/cta-girl.png">
               <img
                 src="img/cta-girl.png"
                 alt="фон Девушка"
                 width="410"
                 height="607"
-              />
+             >
             </picture>
           </div>
         </div>
@@ -654,20 +751,21 @@
               Оставьте свою почту и станьте первым, кто получит скидку на новые
               самокаты
             </h3>
+
             <div class="field">
               <label
                 class="field__label visually-hidden"
                 for="footer-email"
-              ></label>
+             ></label>
+
               <input
                 class="field__input field__input--email"
                 type="tel"
                 id="footer-email"
                 name="email"
                 placeholder="Введите Ваш email"
-                autocomplete="email"
                 required
-              />
+             >
             </div>
 
             <button class="btn btn--primary footer__submit" type="submit">
@@ -678,12 +776,18 @@
         <div class="container footer__top">
           <nav class="footer__nav-col">
             <h3 class="footer__nav-title">Каталог товаров</h3>
+
             <ul class="footer__nav-list">
-              <li><a class="footer__nav-link" href="#">Электросамокаты</a></li>
+              <li>
+                <a class="footer__nav-link" href="#">Электросамокаты</a>
+              </li>
+
               <li><a class="footer__nav-link" href="#">Электроскутеры</a></li>
+
               <li>
                 <a class="footer__nav-link" href="#">Электровелосипеды</a>
               </li>
+
               <li>
                 <a class="footer__nav-link" href="#">Электровелосипеды</a>
               </li>
@@ -692,21 +796,28 @@
 
           <div class="footer__buyers-col">
             <h3 class="footer__nav-title">Покупателям</h3>
+
             <div class="footer__buyers-inner">
               <ul class="footer__nav-list">
                 <li>
                   <a class="footer__nav-link" href="#">Сервисный центр</a>
                 </li>
+
                 <li>
                   <a class="footer__nav-link" href="#">Доставка и оплата</a>
                 </li>
+
                 <li><a class="footer__nav-link" href="#">Рассрочка</a></li>
+
                 <li><a class="footer__nav-link" href="#">Тест-драйв</a></li>
               </ul>
               <ul class="footer__nav-list">
                 <li><a class="footer__nav-link" href="#">Блог</a></li>
+
                 <li><a class="footer__nav-link" href="#">Сотрудничество</a></li>
+
                 <li><a class="footer__nav-link" href="#">Контакты</a></li>
+
                 <li><a class="footer__nav-link" href="#">Акции</a></li>
               </ul>
             </div>
@@ -717,16 +828,21 @@
             <div class="footer__phones">
               <div class="footer__phone-block">
                 <span class="footer__phone-label">Call-центр</span>
+
                 <a class="footer__phone-number" href="tel:+78005055461"
-                  >+7 (800) 505-54-61</a
-                >
+                 >+7 (800) 505-54-61</a
+               >
+
                 <span class="footer__phone-hours">Пн-Вс 10:00 - 20:00</span>
               </div>
+
               <div class="footer__phone-block">
                 <span class="footer__phone-label">Сервисный центр</span>
+
                 <a class="footer__phone-number" href="tel:+74993507692"
-                  >+7 (499) 350-76-92</a
-                >
+                 >+7 (499) 350-76-92</a
+               >
+
                 <span class="footer__phone-hours">Пн-Вс 10:00 - 20:00</span>
               </div>
             </div>
@@ -736,7 +852,9 @@
         </div>
 
         <div class="footer__divider-wrap">
-          <div class="container"><hr class="footer__divider" /></div>
+          <div class="container">
+            <hr class="footer__divider">
+          </div>
         </div>
 
         <div class="container footer__brand-row">
@@ -744,26 +862,28 @@
             <a href="/" class="footer__logo" aria-label="Kugo — главная">
               <span class="footer__logo-text">KUGOO</span>
             </a>
+
             <div class="footer__apps">
               <a
                 href="#"
                 class="footer__app-badge"
                 aria-label="Скачать в Google Play"
-              >
+             >
                 <svg class="footer__app-store-icon" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#badge-google-play" />
                 </svg>
               </a>
+
               <a
                 href="#"
                 class="footer__app-badge"
                 aria-label="Скачать в App Store"
-              >
+             >
                 <svg class="footer__app-store-icon" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#badge-app-store" />
                 </svg>
               </a>
-						</div>
+            </div>
           </div>
 
           <div class="footer__socials">
@@ -773,28 +893,33 @@
                   <use href="img/sprite.svg#icon-vk" />
                 </svg>
               </span>
+
               <span class="footer__social-info">
                 <span class="footer__social-name">Вконтакте</span>
                 <span class="footer__social-count">3 300</span>
               </span>
             </a>
+
             <a href="#" class="footer__social-item" aria-label="YouTube">
               <span class="footer__social-icon footer__social-icon--yt">
                 <svg class="icon" aria-hidden="true">
                   <use href="img/sprite.svg#icon-youtube" />
                 </svg>
               </span>
+
               <span class="footer__social-info">
                 <span class="footer__social-name">YouTube</span>
                 <span class="footer__social-count">3 603</span>
               </span>
             </a>
+
             <a href="#" class="footer__social-item" aria-label="Telegram">
               <span class="footer__social-icon footer__social-icon--tg">
                 <svg class="icon" aria-hidden="true">
                   <use href="img/sprite.svg#icon-telegram" />
                 </svg>
               </span>
+
               <span class="footer__social-info">
                 <span class="footer__social-name">Telegram</span>
                 <span class="footer__social-count">432</span>
@@ -804,54 +929,61 @@
         </div>
 
         <div class="footer__divider-wrap">
-          <div class="container"><hr class="footer__divider" /></div>
+          <div class="container"><hr class="footer__divider"></div>
         </div>
 
         <div class="container footer__bottom">
           <nav class="footer__legal" aria-label="Юридические документы">
             <a class="footer__legal-link" href="#">Реквизиты</a>
+
             <a class="footer__legal-link" href="#"
-              >Политика конфиденциальности</a
-            >
+             >Политика конфиденциальности</a
+           >
           </nav>
 
-          <div class="footer__payments payments" aria-label="Способы оплаты">
-						<div class="payments__item">
+          <div class="footer__payments payments">
+            <div class="payments__item">
               <svg class="icon payments__icon" aria-hidden="true">
                 <use href="img/sprite.svg#google-pay" />
               </svg>
             </div>
+
             <div class="payments__item">
               <svg class="payments__icon" aria-hidden="true">
                 <use href="img/sprite.svg#apple-pay" />
               </svg>
             </div>
+
             <div class="payments__item">
               <svg class="payments__icon" aria-hidden="true">
                 <use href="img/sprite.svg#visa-logo" />
               </svg>
             </div>
+
             <div class="payments__item">
               <svg class="payments__icon" aria-hidden="true">
                 <use href="img/sprite.svg#mastercard" />
               </svg>
             </div>
+
             <div class="payments__item">
               <svg class="payments__icon" aria-hidden="true">
                 <use href="img/sprite.svg#maestro" />
               </svg>
             </div>
+
             <div class="payments__item">
               <svg class="payments__icon" aria-hidden="true">
                 <use href="img/sprite.svg#webmoney" />
               </svg>
             </div>
+
             <div class="payments__item">
               <svg class="payments__icon" aria-hidden="true">
                 <use href="img/sprite.svg#qiwi" />
               </svg>
             </div>
-					</div>
+          </div>
 
           <div class="footer__chat">
             <span class="footer__chat-label">Online&nbsp;чат:</span>
@@ -860,11 +992,13 @@
                 <use href="img/sprite.svg#icon-viber" />
               </svg>
             </a>
+
             <a href="#" class="footer__chat-link" aria-label="WhatsApp">
               <svg class="icon" aria-hidden="true">
                 <use href="img/sprite.svg#icon-whatsapp" />
               </svg>
             </a>
+
             <a href="#" class="footer__chat-link" aria-label="Telegram">
               <svg class="icon" aria-hidden="true">
                 <use href="img/sprite.svg#icon-telegram" />
@@ -882,23 +1016,28 @@
           <use xlink:href="img/sprite.svg#icon-close" />
         </svg>
       </button>
+
       <div class="modal__inner">
         <div class="modal__content">
           <h2 class="modal__title" id="modal-title">
-            Запишитесь<br />
+            Запишитесь<br>
             на тест-драйв электросамоката
           </h2>
+
           <p class="modal__model-hint" id="modal-model-hint" hidden></p>
+
           <p class="modal__subtitle">и подберите модель для себя</p>
+
           <p class="modal__desc">
             Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.
           </p>
+
           <form class="modal__form" id="modal-form" novalidate>
-						<span>Как с вами удобнее связаться?</span>
+            <span>Как с вами удобнее связаться?</span>
+
             <div class="field">
-              <label class="field__label" for="modal-phone"
-                ></label
-              >
+              <label class="field__label" for="modal-phone"></label>
+
               <input
                 class="field__input field__input--phone"
                 type="tel"
@@ -907,59 +1046,70 @@
                 placeholder="+7 (___) ___ - __ - __"
                 autocomplete="tel"
                 required
-              />
+             >
             </div>
+
             <button class="btn btn--primary modal__submit" type="submit">
               Оформить предзаказ
             </button>
+
             <label class="modal__consent">
               <input
                 class="modal__consent-check"
                 type="checkbox"
                 name="consent"
                 required
-              />
+             >
+
               <span class="modal__consent-text"
-                >Нажимая на кнопку, вы соглашаетесь на обработку персональных
+               >Нажимая на кнопку, вы соглашаетесь на обработку персональных
                 данных и <a href="#">политикой конфиденциальности</a></span
-              >
+             >
             </label>
           </form>
-          <div class="modal__success" hidden>
-            <p>Спасибо! Менеджер свяжется с вами в течение 5 минут.</p>
-          </div>
         </div>
+
         <div class="modal__image">
           <picture>
-              <source type="image/webp" srcset="img/modal-rider.webp" />
-              <source type="image/jpeg" srcset="img/modal-rider.jpg" />
-              <img
-                src="img/modal-rider.jpg"
-                alt="Девушка на самокате"
-                width="338"
-                height="497"
-              />
-            </picture>
+            <source type="image/webp" srcset="img/modal-rider.webp">
+            <source type="image/jpeg" srcset="img/modal-rider.jpg">
+            <img
+              src="img/modal-rider.jpg"
+              alt="Девушка на самокате"
+              width="338"
+              height="497"
+           >
+          </picture>
         </div>
       </div>
     </dialog>
 
-		<dialog class="modal modal-success" role="alertdialog" aria-labelledby="alert-modal" id="alert-modal">
-  <div class="modal-dialog">
-   <h2 class="modal-title">Спасибо за заявку!</h2>
+    <dialog
+      class="modal modal-success"
+      role="alertdialog"
+      aria-labelledby="alert-modal"
+      id="alert-modal"
+   >
+      <div class="modal-dialog">
+        <h2 class="modal-title">Спасибо за заявку!</h2>
 
-    <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
-      <svg class="close-icon">
-        <use xlink:href="img/sprite.svg#icon-close"></use>
-      </svg>
-    </a>
+        <a
+          href="#"
+          class="modal-close"
+          data-toggle="modal"
+          data-target="#alert-modal"
+       >
+          <svg class="close-icon">
+            <use xlink:href="img/sprite.svg#icon-close" />
+          </svg>
+        </a>
 
-    <p class="modal-text">
-      Наш менеджер свяжется с Вами в ближайшее время!
-    </p>
-  </div>
-</dialog>
-		<script src="js/just-validate.production.min.js"></script>
+        <p class="modal-text">
+          Наш менеджер свяжется с Вами в ближайшее время!
+        </p>
+      </div>
+    </dialog>
+    <script src="js/just-validate.production.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

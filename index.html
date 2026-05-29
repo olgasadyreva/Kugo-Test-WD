@@ -6,24 +6,45 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Тест-драйв электросамокатов — Kugo</title>
+
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
   </head>
   <body>
-		{# <nav id="header-nave"
-		class="header__topline-nav header__mobile-nav"
-		aria-label="Вспомогательная навигация"
-	>
-		<a href="#" class="header__topline-link">Сервис</a>
-		<a href="#" class="header__topline-link">Сотрудничество</a>
-		<a href="#" class="header__topline-link">Заказать звонок</a>
-	</nav> #}
+		<div class="mobile__menu">
+			<nav
+				class="mobile__nav"
+				aria-label="Мобильная навигация"
+			>
+				<a href="#" class="mobile__link">Сервис</a>
+				<a href="#" class="mobile__link">Сотрудничество</a>
+				<a href="#" class="mobile__link">Заказать звонок</a>
+			</nav>
+		</div>
+
     <!-- HEADER -->
     <header class="header">
 			<hr class="header__divider" />
       <div class="container">
         <div class="header__topline">
           <div class="header__topline-inner">
-						<button
-              class="header__burger"
+						 <button
+              class="header__burger mobile-menu-toggle"
               type="button"
               aria-controls="header-mobile-nav"
               aria-expanded="false"
@@ -31,11 +52,16 @@
             >
               <span></span><span></span><span></span>
             </button>
+
             <nav
-							id="header-nave"
               class="header__topline-nav"
-              aria-label="Вспомогательная навигация"
+              aria-label="Главная навигация"
             >
+							<a href="#" class="mobile-menu-toggle">
+								<div class="mobile-menu-line"></div>
+								<div class="mobile-menu-line"></div>
+								<div class="mobile-menu-line"></div>
+							</a>
               <a href="#" class="header__topline-link">Сервис</a>
               <a href="#" class="header__topline-link">Сотрудничество</a>
               <a href="#" class="header__topline-link">Заказать звонок</a>
@@ -500,7 +526,7 @@
                 </picture>
               </div>
               <div class="card__content">
-                <h3 class="card__name">Kugoo Kirin M4</h3>
+                <h3 class="card__name">Kugoo Kirin M4 Kugoo Kirin M4 Kugoo Kirin M4 Kugoo Kirin M4</h3>
                 <ul class="card__specs">
                   <li class="card__spec">
                     <svg class="icon" aria-hidden="true">
@@ -565,7 +591,7 @@
             <p class="cta-form__subtitle">
               Оставьте заявку, и менеджер подберет нужный самокат
             </p>
-            <form class="cta-form__form" id="cta-contact-form" novalidate>
+            <form class="cta-form__form" id="cta-contact-form">
               <div class="cta-form__fields">
                 <div class="field">
                   <label
@@ -577,7 +603,7 @@
                     type="tel"
                     id="cta-phone"
                     name="phone"
-                    placeholder="+7 (___) ___ - __ - __"
+                    placeholder="+7 (___) __ - __ - __"
                     autocomplete="tel"
                     required
                   />
@@ -737,7 +763,7 @@
                   <use xlink:href="img/sprite.svg#badge-app-store" />
                 </svg>
               </a>
-            </div>
+						</div>
           </div>
 
           <div class="footer__socials">
@@ -790,7 +816,7 @@
           </nav>
 
           <div class="footer__payments payments" aria-label="Способы оплаты">
-            <div class="payments__item">
+						<div class="payments__item">
               <svg class="icon payments__icon" aria-hidden="true">
                 <use href="img/sprite.svg#google-pay" />
               </svg>
@@ -825,7 +851,7 @@
                 <use href="img/sprite.svg#qiwi" />
               </svg>
             </div>
-          </div>
+					</div>
 
           <div class="footer__chat">
             <span class="footer__chat-label">Online&nbsp;чат:</span>
@@ -918,6 +944,22 @@
       </div>
     </dialog>
 
+		<dialog class="modal modal-success" role="alertdialog" aria-labelledby="alert-modal" id="alert-modal">
+  <div class="modal-dialog">
+   <h2 class="modal-title">Спасибо за заявку!</h2>
+
+    <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
+      <svg class="close-icon">
+        <use xlink:href="img/sprite.svg#icon-close"></use>
+      </svg>
+    </a>
+
+    <p class="modal-text">
+      Наш менеджер свяжется с Вами в ближайшее время!
+    </p>
+  </div>
+</dialog>
+		<script src="js/just-validate.production.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

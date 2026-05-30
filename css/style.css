@@ -212,7 +212,7 @@ textarea:focus-visible {
 
 main {
 		position: relative;
-    z-index: -1;
+    z-index: 0;
 	}
 
 .field {
@@ -387,6 +387,7 @@ input.field__input--email:-webkit-autofill:focus {
 }
 
 .header {
+	z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
@@ -402,11 +403,14 @@ input.field__input--email:-webkit-autofill:focus {
 }
 
 .header .container {
+	max-width: 1380px;
 	background: #ffffff;
 }
 
 .header__topline {
   max-width: 1110px;
+	margin-left: auto;
+	margin-right: auto;
   margin-bottom: 18px;
   padding-top: 2px;
   border-bottom: 1px solid var(--clr-border);
@@ -475,6 +479,8 @@ input.field__input--email:-webkit-autofill:focus {
 
 .header__top {
   max-width: 1110px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .header__top-inner {
@@ -1185,6 +1191,8 @@ input.field__input--email:-webkit-autofill:focus {
 .field__input--email {
   padding-top: 12px;
   color: #ffffff;
+	border: none;
+	background: transparent;
 }
 
 .field__input--phone {
@@ -1605,7 +1613,8 @@ input.field__input--email:-webkit-autofill:focus {
   transition: color var(--transition);
 }
 
-.modal {
+/* Стили для модального окна */
+dialog.modal {
   padding: 0;
   border: none;
   border-radius: var(--radius-sm);
@@ -1613,12 +1622,44 @@ input.field__input--email:-webkit-autofill:focus {
   max-width: 790px;
   width: min(790px, 94vw);
   overflow: hidden;
+  background: var(--clr-bg);
+  opacity: 0; /* Начальная прозрачность, чтобы избежать мерцания */
 }
 
-.modal::backdrop {
-  background: rgba(10, 10, 30, 0.55);
-  backdrop-filter: blur(2px);
+/* Стили для ОТКРЫТОГО модального окна */
+dialog.modal[open] {
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fade-in 0.4s forwards;
 }
+
+/* Ключевые кадры для анимации появления */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* @starting-style {
+  dialog[open] {
+    transform: translateY(-100vh);
+  }
+} */
+
+/* dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.5s ease;
+}
+
+dialog[open]::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+} */
 
 .modal__inner {
   display: grid;
@@ -1818,41 +1859,13 @@ input.field__input--email:-webkit-autofill:focus {
   color: var(--clr-violet);
 }
 
-dialog {
-  margin: auto;
-  transform: translateY(-100vh);
-  transition: transform 0.5s ease-out;
-  background: white;
-  border-radius: 20px;
-  border: none;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-}
 
-dialog[open] {
-  transform: translateY(0);
-}
 
-/* @starting-style { */
-  dialog[open] {
-    transform: translateY(-100vh);
-  }
-/* } */
-
-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0);
-  transition: background-color 0.5s ease;
-}
-
-dialog[open]::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* @starting-style { */
+/* @starting-style {
   dialog[open]::backdrop {
     background-color: rgba(0, 0, 0, 0);
   }
-/* } */
+} */
 
 .header__burger {
   display: none;
